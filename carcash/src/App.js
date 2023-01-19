@@ -1,24 +1,22 @@
 import Inventory from "./components/Inventory";
-import { ChakraProvider } from "@chakra-ui/react";
-import { Switch } from "react-router-dom";
+import { ChakraProvider, useColorMode } from "@chakra-ui/react";
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Sales from "./components/Sales";
 import Home from "./components/Home";
 function App() {
+    const { colorMode } = useColorMode();
+
   return (
-    <ChakraProvider>
+    <ChakraProvider isDark={colorMode === "dark"}>
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/inventory" component={Inventory} />
-          <Route exact path="/sales" component={Sales} />
-        </Switch>
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css?family=Lato:300,700|Prata')
-        </style>
         <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/sales" element={<Sales />} />
+        </Routes>
       </BrowserRouter>
     </ChakraProvider>
   );

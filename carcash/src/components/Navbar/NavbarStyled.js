@@ -5,17 +5,16 @@ const NavbarStyled = styled.div`
   justify-content: space-between;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 20px;
   font-family: "Lato", sans-serif;
 
   .navigation-links-div {
   }
   Button {
-    width: 200px;
+    margin-top: 30px;
+    width: 100px;
     height: 50px;
     margin-right: 30px;
     font-size: 20px;
-    margin-top: 10px;
   }
 
   .Car-Cash-header {
