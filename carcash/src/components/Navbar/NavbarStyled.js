@@ -7,8 +7,6 @@ const NavbarStyled = styled.div`
   margin-right: 15%;
   font-family: "Lato", sans-serif;
 
-  .navigation-links-div {
-  }
   Button {
     margin-top: 30px;
     width: 100px;
@@ -20,6 +18,7 @@ const NavbarStyled = styled.div`
   .Car-Cash-header {
     font-weight: Bold;
     font-size: 50px;
+    margin-top: 20px;
   }
 `;
 export default NavbarStyled;

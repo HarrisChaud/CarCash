@@ -1,0 +1,41 @@
+const InventoryData = {
+  vehicles: [
+    {
+      img: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?cs=srgb&dl=pexels-mike-b-170811.jpg&fm=jpg",
+      Make: "BMW",
+      Model: "M3",
+      Year: "2019",
+      Vin: "1234567890ABCDEFGH",
+      Classification: "Sedan",
+      Cylinders: 4,
+      Transmission: "Automatic",
+      Engine: "2.5L V6",
+      Drivetrain: "Front-Wheel Drive",
+      BodyType: "Sedan",
+      PrimaryColor: "Blue",
+      FuelType: "Gasoline",
+      Costs: "$10,000",
+      Retail: "$15,000",
+    },
+    {
+      img: "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?cs=srgb&dl=pexels-mike-b-170811.jpg&fm=jpg",
+      Make: "BMW",
+      Model: "M3",
+      Year: "2019",
+      name: "Car2",
+      Vin: "09876543210FEDCBAGH",
+      Classification: "SUV",
+      Cylinders: 6,
+      Transmission: "Manual",
+      Engine: "3.0L V8",
+      Drivetrain: "Four-Wheel Drive",
+      BodyType: "SUV",
+      PrimaryColor: "Black",
+      FuelType: "Diesel",
+      Costs: "$20,000",
+      Retail: "$25,000",
+    },
+  ],
+};
+
+export default InventoryData;
